@@ -43,6 +43,6 @@ jobs:
           script: |
             cd ~/my-app
             npm ci
-            npx pm2 reload my-app -f || npx pm2 start index.js --name my-app
+            npx pm2 reload my-app -f || npx pm2 start src/index.js --name my-app
             npx pm2 save
             exit 0
